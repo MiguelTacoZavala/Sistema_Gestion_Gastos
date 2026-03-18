@@ -31,7 +31,10 @@ export default function Login() {
         </div>
       </div>
       <div className="right-view">
-        
+        <div className="content-app">
+            <h1>Bienvenido</h1>
+            <p>Esto es una pagina diseñada con el propósito de <span>ayudarte a gestionar tus gastos de manera eficiente</span></p>
+        </div>
       </div>
     </>
   );

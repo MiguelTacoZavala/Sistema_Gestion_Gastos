@@ -22,6 +22,10 @@ h1 {
     font-weight: bold;
 }
 
+header h1 {
+    opacity: 0.6;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -57,4 +61,48 @@ h1 {
     background: linear-gradient(180deg, #8BDFD1 0%, #379787 100%);
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 280px;
+}
+
+.content-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.content-app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.content-app h1 {
+    font-family: 'Poppins', sans-serif, system-ui;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.content-app p {
+    font-family: 'Scheherazade New', sans-serif, system-ui;
+    color: #000;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 200px;
+    padding: 0 150px;
+}
+
+.content-app span {
+    font-family: 'Poppins', sans-serif, system-ui;
+    color: #e26969;
+    font-size: 32px;
+    font-weight: bold;
 }
