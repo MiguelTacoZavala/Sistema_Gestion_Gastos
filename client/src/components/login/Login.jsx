@@ -2,8 +2,18 @@ import bankIcon from "../../assets/icons/icon-bank.svg";
 import "./Login.css";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
+import { useNavigate } from "react-router";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    //Aqui va tu logica chamo
+
+    navigate("/main");
+  }
   return (
     <>
       <section className="form-section">
@@ -25,7 +35,7 @@ export default function Login() {
             type="password"
             placeholder="Contraseña"
           />
-          <Button text="Iniciar sesion" type="login"></Button>
+          <Button text="Iniciar sesion" type="login" onClick={handleLogin}></Button>
         </form>
       </section>
       <section className="welcome-section">

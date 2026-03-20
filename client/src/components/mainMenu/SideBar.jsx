@@ -12,7 +12,7 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { id: 1, icon: iconHome, label: "Menu principal", endpoint: "/main-menu" },
+    { id: 1, icon: iconHome, label: "Menu principal", endpoint: "/main" },
     { id: 2, icon: iconHistory, label: "Historial de gastos", endpoint: "/history"},
     { id: 3, icon: iconResumen, label: "Resumen de gastos", endpoint: "/summary"},
     { id: 4, icon: iconLogout, label: "Cerrar sesion", endpoint: "/logout" },
