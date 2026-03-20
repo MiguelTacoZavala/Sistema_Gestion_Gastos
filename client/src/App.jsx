@@ -5,13 +5,17 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import LoginPage from './pages/Login/LoginPage'
 import MainMenuPage from './pages/MainMenu/MainMenuPage'
-import {BrowserRouter} from 'react-router'
+import {BrowserRouter, Routes, Route} from 'react-router'
 
 function App() {
 
   return (
     <BrowserRouter>
-      <MainMenuPage/>
+      <Routes>
+        <Route path="/main" element={<MainMenuPage />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/logout" element={<LoginPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
