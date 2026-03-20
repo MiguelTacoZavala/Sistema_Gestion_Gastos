@@ -11,7 +11,7 @@ export default function MainMenu() {
             <form className="main-menu-form">
                 <div className="main-menu-form__inputs">
                     <Input label="Descripcion" type="text"></Input>
-                    <Input label="Monto" type="select"></Input>
+                    <Input label="Monto" type="text"></Input>
                     <Input label="Fecha" type="text"></Input>
                     <Input label="Tipo" type="select"></Input>
                 </div>
