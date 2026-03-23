@@ -1,9 +1,11 @@
-const app = require('./app');
+const app = require('./src/app');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // Puerto
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
-//Levantar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
