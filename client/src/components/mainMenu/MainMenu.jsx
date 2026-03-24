@@ -43,6 +43,7 @@ export default function MainMenu() {
             .catch((error) => {
                 console.error("Error:", error);
             })
+        e.target.reset();
     }
 
     return (
