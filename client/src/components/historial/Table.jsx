@@ -86,7 +86,7 @@ function Table() {
                         gastos.map((gasto) => (
                             <tr key={gasto.id}>
                                 <td>{gasto.descripcion}</td>
-                                <td>{gasto.monto}</td>
+                                <td>S./ {gasto.monto}</td>
                                 <td>{new Date(gasto.fecha).toLocaleDateString()}</td>
                                 <td>{gasto.categoria}</td>
                             </tr>
