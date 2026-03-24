@@ -4,6 +4,7 @@ const sequelize = require('./src/db');
 
 dotenv.config();
 
+
 async function startServer() {
     try {
         // intenta conectar a la base de datos
