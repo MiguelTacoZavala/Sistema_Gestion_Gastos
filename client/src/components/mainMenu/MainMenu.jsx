@@ -2,18 +2,30 @@ import Sidebar from "./SideBar"
 import "./MainMenu.css"
 import Input from "../UI/Input"
 import Button from "../UI/Button"
+import {useState} from "react"
+import {useEffect} from "react"
 
 export default function MainMenu() {
+
+    const categorias = ["Alimentacion", "Transporte", "Entretenimiento", "Salud", "Vivienda", "Otros"];
+    const [user, setUser] = useState("");
+    useEffect(() => {
+        const storedUser = localStorage.getItem("user");
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
+
     return (
         <main className="main-menu">
             <Sidebar />
-            <h1>Bienvenido, nombre_de_usuario</h1>
+            <h1>Bienvenido, <span className="h1-username">{user.username}</span></h1>
             <form className="main-menu-form">
                 <div className="main-menu-form__inputs">
-                    <Input label="Descripcion" type="text"></Input>
-                    <Input label="Monto" type="text"></Input>
-                    <Input label="Fecha" type="text"></Input>
-                    <Input label="Tipo" type="select"></Input>
+                    <Input id="descripcion" label="Descripcion" type="text"></Input>
+                    <Input id="monto" label="Monto" type="decimal"></Input>
+                    <Input id="fecha" label="Fecha" type="date"></Input>
+                    <Input id="tipo" label="Tipo" type="select" options={categorias}></Input>
                 </div>
                 <div className="main-menu-form__btn">
                     <Button text="Agregar gasto" type="add-gasto"></Button>
