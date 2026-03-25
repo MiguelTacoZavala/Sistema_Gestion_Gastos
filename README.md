@@ -23,6 +23,8 @@ Para proteger la seguridad de la aplicación, las credenciales y claves de API n
 ### 1. Variables de Entorno del Cliente
 Crea un archivo `.env` en la carpeta `/client`:
 
+> [!important]
+> Sincronización de Puertos: Asegúrate de que el puerto definido en VITE_LOCAL_HOST (Client) coincida exactamente con el PORT configurado en el servidor. Si el servidor corre en el 5000, el cliente debe apuntar a http://localhost:5000/api
 ```env
 # URL de la API del servidor
 VITE_LOCAL_HOST = "http://localhost:[PORT]/api"
